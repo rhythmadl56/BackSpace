@@ -1,0 +1,71 @@
+no more doomscrolling
+
+Browser
+
+↓
+
+React
+
+↓
+
+API Request
+
+↓
+
+Express
+
+↓
+
+MongoDB
+
+↓
+
+Express
+
+↓
+
+API Response
+
+↓
+
+React
+
+↓
+
+Browser
+
+what's an API?
+An API is simply a set of rules that tells other programs how to communicate with your application.
+
+/api/profile
+these are API endpoints after api.
+
+API methods:-
+GET-to retrieve a journal
+POST-to create a journal
+DELETE-to delete a journal by id
+PUT-to update a journal by id
+
+Nodemon-automatically restarts your server whenever a change is detected
+cors-it disables any other non trusted frontend website to read or peak data from your site's backend API and allows only trusted(set by you) websites to read or fetch data
+
+why we use database?
+-suppose we store journals once we start our server and make a journal entry it gets stored in RAM by default and when the server is restarted everything's gone cuz that was temporary so we need a database which has permanent memory
+
+Mongoose
+-by default we have to write complex commands to store data in mongodb so for easy access we use mongoose...
+in brief words its a translator for mongodb
+
+File work-
+server.js-starts the server and loads other modules
+.env-contains passwords, API keys and other security stuff that can't be revealed
+.gitignore-files and directories that will be ignored when we push the project to github
+db.js-connection to mongodb(async is used for mongo connection and await for waiting till mongo connects)
+then we export this file to server.js
+
+the schema files:-
+controllers- contains main logic for journal posting and all....
+models-contains what will be stored when a journal is created
+routes-mapping of which function should be called on a request
+
+
