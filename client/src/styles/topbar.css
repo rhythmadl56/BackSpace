@@ -1,0 +1,73 @@
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 18px;
+  min-height: 60px;
+  background: #3b5998;
+  border-bottom: 1px solid #2f4d88;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topbar-title {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #f4f6fb;
+  text-transform: none;
+}
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-width: 0;
+}
+
+.topbar-nav {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  min-width: 0;
+  justify-content: flex-end;
+}
+
+.topbar-nav a {
+  color: #f4f6fb;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 8px 10px;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  white-space: nowrap;
+}
+
+.topbar-nav a:hover {
+  background: rgba(255, 255, 255, 0.14);
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+.topbar-search {
+  min-width: 240px;
+  width: auto;
+  max-width: 280px;
+}
+
+.search-input {
+  width: 100%;
+  height: 32px;
+  border: 1px solid #d9dce8;
+  border-radius: 3px;
+  padding: 0 10px;
+  background: #fff;
+  color: #2a2d39;
+  font-size: 12px;
+  box-sizing: border-box;
+}
+
+.search-input::placeholder {
+  color: #7f85a0;
+}

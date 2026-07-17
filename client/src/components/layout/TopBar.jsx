@@ -1,32 +1,22 @@
+import "../../styles/topbar.css";
+
 function TopBar() {
   return (
     <header className="topbar">
-
-      <div className="logo">
-
-        Backspace
-
+      <div className="topbar-title">Backspace</div>
+      <div className="topbar-right">
+        <nav className="topbar-nav">
+          <a href="#">Home</a>
+          <a href="#">Journal</a>
+          <a href="#">Friends</a>
+          <a href="#">Messages</a>
+          <a href="#">Profile</a>
+          <a href="#">Settings</a>
+        </nav>
+        <div className="topbar-search">
+          <input className="search-input" placeholder="Search..." />
+        </div>
       </div>
-
-      <nav>
-
-        <a href="#">Home</a>
-
-        <a href="#">Journal</a>
-
-        <a href="#">Friends</a>
-
-        <a href="#">Messages</a>
-
-        <a href="#">Explore</a>
-
-      </nav>
-
-      <input
-        className="search"
-        placeholder="Search..."
-      />
-
     </header>
   );
 }
