@@ -1,10 +1,12 @@
 const JournalCard = ({
-  title = 'Untitled Entry',
-  body = 'No content yet.',
-  mood = '😌',
-  timestamp = 'Today • 11:24 AM',
-  visibility = 'Friends Only',
-  listening = 'Quiet piano',
+  id,
+  title,
+  body,
+  mood,
+  timestamp,
+  visibility,
+  listening,
+  onDelete,
 }) => {
   return (
     <article className="journal-card">
@@ -21,7 +23,12 @@ const JournalCard = ({
           <button>Reply</button>
           <button>Bookmark</button>
           <button>Edit</button>
-          <button className="danger">Delete</button>
+          <button
+            className="danger"
+            onClick={() => onDelete(id)}
+          >
+            Delete
+          </button>
         </div>
       </div>
     </article>
